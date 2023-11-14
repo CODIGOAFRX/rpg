@@ -50,8 +50,9 @@ public class Jugador {
 
     @Override
     public String toString() {
-       
-        return "Jugador [Nombre=" + Nombre + ", Salud=" + Salud + ", Ataque=" + Ataque + ", Dinero=" + Dinero + "]";
+        String mensaje = "Nombre : " + Nombre + "\n" + "Salud :  " + Salud + "\n" + "Ataque : " + Ataque + "\n"
+                + "Dinero :  "
+                + Dinero;
+        return mensaje;
     }
-
 }// cierre clase

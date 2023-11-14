@@ -1,14 +1,15 @@
 package rpg;
 
-public class Armas {
+public class Enemigo {
     private String Nombre;
     private int Ataque;
 
     // constructor
-    public Armas(String nombre, int ataque) {
+    public Enemigo(String nombre, int ataque) {
         this.Nombre = nombre;
         this.Ataque = ataque;
     }
+    // getters
 
     public String getNombre() {
         return Nombre;
@@ -18,6 +19,7 @@ public class Armas {
         return Ataque;
     }
 
+    // setters
     public void setNombre(String nombre) {
         Nombre = nombre;
     }
@@ -28,7 +30,9 @@ public class Armas {
 
     @Override
     public String toString() {
-        return "Armas [Nombre=" + Nombre + ", Ataque=" + Ataque + "]";
+        String mensaje = "Nombre : " + Nombre + "\n" + "Ataque : " + Ataque;
+        return mensaje;
+
     }
 
-}
+}// class enemigo
